@@ -1,13 +1,13 @@
 import styles from "./booksSection.module.css";
 import SectionHeader from "../sectionHeader";
 
-const BooksSection = ({ books, renderStars}) => {
+const BooksSection = ({ books, renderStars, text, title, viewAllLink}) => {
   return (
     <section className={styles.bookSection}>
       <SectionHeader
-        Text={"ver todas"}
-        title={"Destaques da Semana"}
-        viewAllLink={"/destaques"}
+        Text={text}
+        title={title}
+        viewAllLink={viewAllLink}
       />
 
       <div className={styles.booksGrid}>
