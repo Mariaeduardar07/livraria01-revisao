@@ -2,6 +2,7 @@ import styles from "./page.module.css";
 import Header from "../components/header";
 import HeroBanner from "../components/heroBanner";
 import Categories from "../components/categories";
+import SubscriptionSection from "../components/subscriptionSection";
  
  export default function Home() {
    // Dados que seriam obtidos de uma API
@@ -252,26 +253,7 @@ import Categories from "../components/categories";
        </section>
  
        {/* SUBSCRIPTION SECTION */}
-       <section className={styles.subscriptionSection}>
-         <div className={styles.subscriptionContent}>
-           <h2 className={styles.subscriptionHeading}>
-             Fique por dentro das novidades!
-           </h2>
-           <p className={styles.subscriptionText}>
-             Assine nossa newsletter e receba atualizações sobre novos
-             lançamentos, promoções exclusivas e dicas de leitura.
-           </p>
-           <div className={styles.subscriptionForm}>
-             <input
-               type="email"
-               className={styles.subscriptionInput}
-               placeholder="Seu melhor e-mail"
-             />
-             <button className={styles.subscribeButton}>Assinar</button>
-           </div>
-         </div>
-       </section>
- 
+      <SubscriptionSection />
        {/* SHOPPING CART */}
        <div className={styles.shoppingCart}>
          <div className={styles.cartHeader}>
